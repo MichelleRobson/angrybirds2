@@ -1,3 +1,11 @@
+var arr1=[12,"Michelle",null,32];
+console.log(arr1[1]);
+var arr2=[7,2,4,5,1];
+console.log(arr2[4]);
+console.log(arr2.length);
+var arr3=[[5,6],[3,2],[10,7]];
+console.log(arr3[2]);
+
 const Engine = Matter.Engine;
 const World= Matter.World;
 const Bodies = Matter.Bodies;
@@ -40,9 +48,9 @@ function setup(){
 function draw(){
     background(backgroundImg);
     Engine.update(engine);
-    console.log(box2.body.position.x);
-    console.log(box2.body.position.y);
-    console.log(box2.body.angle);
+    //console.log(box2.body.position.x);
+    //console.log(box2.body.position.y);
+    //console.log(box2.body.angle);
     box1.display();
     box2.display();
     ground.display();
